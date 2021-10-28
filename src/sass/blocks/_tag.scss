@@ -1,0 +1,28 @@
+.tag{
+   border: 1px solid #E0E0E0;
+   border-radius: 5px;
+   padding: 0 20px;
+   font-weight: 500;
+   line-height: 26px;
+   position: relative;
+   cursor: pointer;
+   &_selected{
+      background-color: $main-blue;
+      border: 1px solid $main-blue;
+      color: #fff;
+   }
+   &_can-delete{
+      &:hover{
+      
+         &::after{
+            content: '';
+            width: 10px;
+            height: 10px;
+            background-image: url('../../resourses/icons/tag-close.svg');
+            position: absolute;
+            top: 0;
+            right: 0;
+         }
+      }
+   }
+}

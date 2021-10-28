@@ -1,0 +1,29 @@
+.main{
+   padding: 73px 55px 60px 39px;
+   width: auto;
+   position: relative;
+   &__btns{
+      position: absolute;
+      bottom: 60px;
+      right: 57px;
+      button{
+         &:first-child{
+            margin-right: 22px;
+         }
+      }
+   }
+   &__add-btn{
+      padding-right: 37px !important;
+      position: relative;
+      &::after{
+         content: '';
+         width: 14px;
+         height: 14px;
+         background-image: url('../../resourses/icons/add.svg');
+         position: absolute;
+         top: 50%;
+         transform: translateY(-50%);
+         right: 16px;
+      }
+   }
+}

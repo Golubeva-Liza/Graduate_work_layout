@@ -7,8 +7,6 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="icon" href="/favicon.ico">
    <title>Bookme</title>
-   <!-- Fonts -->
-   <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"> -->
    <!-- Animate -->
    <!-- <link rel="stylesheet" href="assets/css/animate.min.css"> -->
    <link rel="stylesheet" href="css/style.min.css">
@@ -38,22 +36,154 @@
             <input type="text" class="input input_search" placeholder="Поиск респондента">
          </div>
          <label class="label aside__label">
-            Пол:
+            <span>Пол:</span>
             <div class="select aside__select">
-               <button class="input select__btn">Не важно</button>
+               <button class="input select__btn select__btn_default">Не важно</button>
                <ul class="select__list">
-                  <li class="select__list-item" data-value="male">мужской</li>
-                  <li class="select__list-item" data-value="female">женский</li>
+                  <li class="select__list-item" data-value="male">Не важно</li>
+                  <li class="select__list-item" data-value="male">Мужской</li>
+                  <li class="select__list-item" data-value="female">Женский</li>
                </ul>
-               <!-- для отправки формы в которой находится select, для тех. нужд -->
+               <!-- для отправки формы -->
                <input class="select__input-hidden" type="text" name="sex" value="">
+            </div>
+         </label>
+         <label class="label aside__label">
+            <span>Возраст:</span>
+            <div class="select aside__select">
+               прикол
+            </div>
+         </label>
+         <label class="label aside__label">
+            <span>Образование:</span> 
+            <div class="select aside__select">
+               <button class="input select__btn select__btn_default">Не важно</button>
+               <ul class="select__list">
+                  <li class="select__list-item" data-value="male">Не важно</li>
+                  <li class="select__list-item" data-value="male">Мужской</li>
+                  <li class="select__list-item" data-value="female">Женский</li>
+               </ul>
+               <!-- для отправки формы -->
+               <input class="select__input-hidden" type="text" name="sex" value="">
+            </div>
+         </label>
+         <label class="label aside__label">
+            <span>Место жительства:</span>
+            <div class="select aside__select">
+               <button class="input select__btn select__btn_default">Не важно</button>
+               <ul class="select__list">
+                  <!-- будут формироваться динамически от базы данных?  -->
+                  <li class="select__list-item" data-value="male">Не важно</li>
+                  <li class="select__list-item" data-value="male">Мужской</li>
+                  <li class="select__list-item" data-value="female">Женский</li>
+               </ul>
+               <!-- для отправки формы -->
+               <input class="select__input-hidden" type="text" name="sex" value="">
+            </div>
+         </label>
+         <label class="label aside__label">
+            <span>Семейное положение:</span> 
+            <div class="select aside__select">
+               <button class="input select__btn select__btn_default">Не важно</button>
+               <ul class="select__list">
+                  <li class="select__list-item" data-value="male">Не важно</li>
+                  <li class="select__list-item" data-value="male">Разведен(а)</li>
+                  <li class="select__list-item" data-value="female">Состоит в браке</li>
+                  <li class="select__list-item" data-value="female">Не был(а) в браке</li>
+               </ul>
+               <!-- для отправки формы-->
+               <input class="select__input-hidden" type="text" name="sex" value="">
+            </div>
+         </label>
+         <label class="label aside__label">
+            <span>Теги:</span> 
+            <!-- список формируется из данных с сервера -->
+            <div class="select aside__tags">
+               <ul class="aside__tag-wrapper">
+                  <li><span class="tag tag_selected aside__tag">Есть дети</span></li>
+                  <li><span class="tag aside__tag">Машина</span></li>
+                  <li><span class="tag aside__tag">Дача</span></li>
+                  <li><span class="tag aside__tag">Метеоролог</span></li>
+                  <li><span class="tag aside__tag">Рыбалка</span></li>
+                  <li><span class="tag aside__tag">Велосипед</span></li>
+                  <li><span class="tag aside__tag">Рыбалка</span></li>
+                  <li><span class="tag aside__tag">Велосипед</span></li>
+               </ul>
             </div>
          </label>
       </aside>
 
       <!-- Main -->
       <main class="main">
-         ffff
+         
+         <table class="respondents-list">
+            <thead>
+               <tr>
+                  <th>
+                     <label class="respondents-list__label">
+                        <input class="respondents-list__input" name="all" type="checkbox">
+                        <div class="respondents-list__chekbox"></div>
+                     </label>
+                  </th>
+                  <th>ФИО</th>
+                  <th>Пол</th>
+                  <th>Возраст</th>
+                  <th>Образование</th>
+                  <th>Место жительства</th>
+                  <th>Семейное положение</th>
+                  <th>Телефон</th>
+                  <th>Тэги</th>
+                  <th></th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>
+                     <label class="respondents-list__label">
+                        <input class="respondents-list__input" name="respondent" type="checkbox">
+                        <div class="respondents-list__chekbox"></div>
+                     </label>
+                  </td>
+                  <td>Иванов Максимилиан Альфредович Альфредович</td>
+                  <td>М</td>
+                  <td>51</td>
+                  <td>Высшее</td>
+                  <td>Санкт-Петербург</td>
+                  <td>Состоит в браке</td>
+                  <td>+7 999 451 45 45</td>
+                  <td>Есть дети, Машина</td>
+                  <td class="more-functions">
+                     <img src="resourses/icons/dots.svg" alt="dots">
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <label class="respondents-list__label">
+                        <input class="respondents-list__input" name="respondent" type="checkbox">
+                        <div class="respondents-list__chekbox"></div>
+                     </label>
+                  </td>
+                  <td>Петрова Яна Олеговна</td>
+                  <td>Ж</td>
+                  <td>22</td>
+                  <td>Студент</td>
+                  <td>Санкт-Петербург</td>
+                  <td>Не был(а) в браке</td>
+                  <td>+7 999 000 00 00</td>
+                  <td>Есть дети, Машина, Дача</td>
+                  <td class="more-functions">
+                     <img src="resourses/icons/dots.svg" alt="dots">
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+
+         <div class="main__btns">
+            <button class="button" disabled>Пригласить респондентов в проект</button>
+            <button class="button main__add-btn">Добавить респондента</button>
+         </div>
+         
+         </div>
       </main>
 
    </div>
