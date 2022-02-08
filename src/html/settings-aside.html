@@ -1,0 +1,81 @@
+<aside class="aside">
+   <div class="aside__search">
+      <input type="text" class="input input_search" placeholder="Поиск респондента">
+   </div>
+   <label class="label aside__label">
+      <span>Пол:</span>
+      <div class="select aside__select">
+         <button class="input select__btn select__btn_default">Не важно</button>
+         <ul class="select__list">
+            <li class="select__list-item" data-value="male">Не важно</li>
+            <li class="select__list-item" data-value="male">Мужской</li>
+            <li class="select__list-item" data-value="female">Женский</li>
+         </ul>
+         <!-- для отправки формы -->
+         <input class="select__input-hidden" type="text" name="sex" value="">
+      </div>
+   </label>
+   <label class="label aside__label">
+      <span>Возраст:</span>
+      <div class="select aside__select">
+         прикол
+      </div>
+   </label>
+   <label class="label aside__label">
+      <span>Образование:</span> 
+      <div class="select aside__select">
+         <button class="input select__btn select__btn_default">Не важно</button>
+         <ul class="select__list">
+            <li class="select__list-item" data-value="male">Не важно</li>
+            <li class="select__list-item" data-value="male">Мужской</li>
+            <li class="select__list-item" data-value="female">Женский</li>
+         </ul>
+         <!-- для отправки формы -->
+         <input class="select__input-hidden" type="text" name="sex" value="">
+      </div>
+   </label>
+   <label class="label aside__label">
+      <span>Место жительства:</span>
+      <div class="select aside__select">
+         <button class="input select__btn select__btn_default">Не важно</button>
+         <ul class="select__list">
+            <!-- будут формироваться динамически от базы данных?  -->
+            <li class="select__list-item" data-value="male">Не важно</li>
+            <li class="select__list-item" data-value="male">Мужской</li>
+            <li class="select__list-item" data-value="female">Женский</li>
+         </ul>
+         <!-- для отправки формы -->
+         <input class="select__input-hidden" type="text" name="sex" value="">
+      </div>
+   </label>
+   <label class="label aside__label">
+      <span>Семейное положение:</span> 
+      <div class="select aside__select">
+         <button class="input select__btn select__btn_default">Не важно</button>
+         <ul class="select__list">
+            <li class="select__list-item" data-value="male">Не важно</li>
+            <li class="select__list-item" data-value="male">Разведен(а)</li>
+            <li class="select__list-item" data-value="female">Состоит в браке</li>
+            <li class="select__list-item" data-value="female">Не был(а) в браке</li>
+         </ul>
+         <!-- для отправки формы-->
+         <input class="select__input-hidden" type="text" name="sex" value="">
+      </div>
+   </label>
+   <label class="label aside__label">
+      <span>Теги:</span> 
+      <!-- список формируется из данных с сервера -->
+      <div class="select aside__tags">
+         <ul class="aside__tag-wrapper">
+            <li><span class="tag tag_selected aside__tag">Есть дети</span></li>
+            <li><span class="tag aside__tag">Машина</span></li>
+            <li><span class="tag aside__tag">Дача</span></li>
+            <li><span class="tag aside__tag">Метеоролог</span></li>
+            <li><span class="tag aside__tag">Рыбалка</span></li>
+            <li><span class="tag aside__tag">Велосипед</span></li>
+            <li><span class="tag aside__tag">Рыбалка</span></li>
+            <li><span class="tag aside__tag">Велосипед</span></li>
+         </ul>
+      </div>
+   </label>
+</aside>
