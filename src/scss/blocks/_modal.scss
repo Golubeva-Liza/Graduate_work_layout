@@ -1,0 +1,113 @@
+.modal{
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   background-color: rgba($color: #000000, $alpha: 0.25);
+   top: 0;
+   left: 0;
+   z-index: 5;
+   overflow-y: auto;
+   opacity: 0;
+   visibility: hidden;
+   transform: scale(1.2);
+   transition: all 0.2s;
+   &__body{
+      min-height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 30px 20px;
+   }
+   &__content{
+      width: 460px;
+      background-color: #fff;
+      box-shadow: 0px 10px 23px rgba(0, 0, 0, 0.12);
+      border-radius: 5px;
+      padding: 26px;
+   }
+   &__title{
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 30px;
+      color: $main-blue;
+      margin-bottom: 24px;
+   }
+   &__input-name{
+      display: block;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 6px;
+   }
+   &__label{
+      display: block;
+      margin-bottom: 20px;
+   }
+   &__some-inputs{
+      display: flex;
+   }
+
+
+   &__date{
+      input:first-child{
+         margin-right: 16px;
+         width: 150px;
+      }
+      input:last-child{
+         width: 47px;
+      }
+   }
+   &__tags-input{
+      input{
+         margin-right: 16px;
+      }
+   }
+   &__tag-btn{
+      background-color: $main-blue;
+      border-radius: 5px;
+      padding: 0 10px;
+      svg{
+         width: 16px;
+         height: 16px;
+      }
+   }
+   &__sex{
+      display: flex;
+      cursor: pointer;
+      span{
+         font-weight: 500;
+         font-size: 13px;
+         line-height: 16px;
+         margin-right: 8px;
+      }
+      &:not(:last-child){
+         margin-right: 24px;
+      }
+   }
+   &__btns{
+      display: flex;
+      justify-content: flex-end;
+   }
+   &__btn{
+      padding: 0 16px;
+      border-radius: 5px;
+      color: #FFFFFF;
+      height: 36px;
+   }
+   &__ready{
+      background-color: $main-blue;
+   }
+   &__close{
+      background-color: $main-red;
+      margin-right: 24px;
+      &:hover{
+         background-color: $red-hover !important;
+      }
+   }
+}
+
+.modal.show{
+   opacity: 1;
+   visibility: visible;
+   transform: scale(1);
+}

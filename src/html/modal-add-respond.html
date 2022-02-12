@@ -1,0 +1,70 @@
+<div class="modal" data-modal-target="add-respond">
+   <div class="modal__body">
+      <div class="modal__content">
+         <h3 class="modal__title">Добавить респондента</h3>
+         <form class="modal__form" action="/" method="POST">
+            <label class="modal__label">
+               <span class="modal__input-name">ФИО</span>
+               <input class="input modal__input" type="text" name="name" autocomplete="off" placeholder="Введите ФИО">
+            </label>
+            <label class="modal__label">
+               <span class="modal__input-name">Почта</span>
+               <input class="input modal__input" type="email" name="email" autocomplete="off" placeholder="Введите почту">
+            </label>
+            <label class="modal__label">
+               <span class="modal__input-name">Телефон</span>
+               <input class="input modal__input" type="tel" name="phone" autocomplete="off" placeholder="Введите номер телефона">
+            </label>
+            <div class="modal__label">
+               <span class="modal__input-name">Пол</span>
+               <div class="modal__some-inputs">
+                  <label class="checkbox modal__sex">
+                     <span>Мужской</span>
+                     <input class="visually-hidden checkbox__input" checked type="radio" name="sex" value="male">
+                     <div class="checkbox__check"></div>
+                  </label>
+                  <label class="checkbox modal__sex">
+                     <span>Женский</span>
+                     <input class="visually-hidden checkbox__input" type="radio" name="sex" value="female">
+                     <div class="checkbox__check"></div>
+                  </label>
+               </div>
+            </div>
+            <label class="modal__label">
+               <span class="modal__input-name">Дата рождения / возраст</span>
+               <div class="modal__some-inputs modal__date">
+                  <input class="input modal__input" type="date" name="birthday-date" placeholder="Дата">
+                  <input class="input modal__input" type="number" name="age" placeholder="0">
+               </div>
+            </label>
+            <label class="modal__label">
+               <span class="modal__input-name">Образование</span>
+               <div id="select-modal-education-2"></div>
+            </label>
+            <label class="modal__label">
+               <span class="modal__input-name">Место жительства</span>
+               <input class="input modal__input" type="text" name="name" autocomplete="off" placeholder="Город">
+            </label>
+            <label class="modal__label">
+               <span class="modal__input-name">Семейное положение</span>
+               <div id="select-modal-fs-2"></div>
+            </label>
+            <label class="modal__label">
+               <span class="modal__input-name">Добавить тэги</span>
+               <div class="modal__some-inputs modal__tags-input">
+                  <input class="input modal__input" type="text" name="name" autocomplete="off" placeholder="Название тэга">
+                  <button class="button-reset button modal__tag-btn" disabled type="button">
+                     <svg><use xlink:href="img/icons/icons.svg#add"></use></svg>
+                  </button>
+               </div>
+            </label>
+
+            <div class="modal__btns">
+               <button class="button-reset button modal__btn modal__close" type="button" data-modal-close>Отмена</button>
+               <button class="button-reset button modal__btn modal__ready" type="submit">Готово</button>
+            </div>
+         </form>
+      </div>
+   </div>
+
+</div>

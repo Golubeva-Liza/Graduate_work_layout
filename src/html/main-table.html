@@ -1,69 +1,126 @@
 <main class="main">
-   <table class="respondents-list">
-      <thead>
-         <tr>
-            <th>
-               <label class="respondents-list__label">
-                  <input class="respondents-list__input" name="all" type="checkbox">
-                  <div class="respondents-list__chekbox"></div>
-               </label>
-            </th>
-            <th>ФИО</th>
-            <th>Пол</th>
-            <th>Возраст</th>
-            <th>Образование</th>
-            <th>Место жительства</th>
-            <th>Семейное положение</th>
-            <th>Телефон</th>
-            <th>Тэги</th>
-            <th></th>
-         </tr>
-      </thead>
-      <tbody>
-         <tr>
-            <td>
-               <label class="respondents-list__label">
-                  <input class="respondents-list__input" name="respondent" type="checkbox">
-                  <div class="respondents-list__chekbox"></div>
-               </label>
-            </td>
-            <td>Иванов Максимилиан Альфредович Альфредович</td>
-            <td>М</td>
-            <td>51</td>
-            <td>Высшее</td>
-            <td>Санкт-Петербург</td>
-            <td>Состоит в браке</td>
-            <td>+7 999 451 45 45</td>
-            <td>Есть дети, Машина</td>
-            <td class="more-functions">
-               <img src="resourses/icons/dots.svg" alt="dots">
-            </td>
-         </tr>
-         <tr>
-            <td>
-               <label class="respondents-list__label">
-                  <input class="respondents-list__input" name="respondent" type="checkbox">
-                  <div class="respondents-list__chekbox"></div>
-               </label>
-            </td>
-            <td>Петрова Яна Олеговна</td>
-            <td>Ж</td>
-            <td>22</td>
-            <td>Студент</td>
-            <td>Санкт-Петербург</td>
-            <td>Не был(а) в браке</td>
-            <td>+7 999 000 00 00</td>
-            <td>Есть дети, Машина, Дача</td>
-            <td class="more-functions">
-               <img src="resourses/icons/dots.svg" alt="dots">
-            </td>
-         </tr>
-      </tbody>
-   </table>
+   <div class="main__table-container">
+      <!-- modal-closed -->
+      <div class="popup main__respondent-options" data-popup-target="respond-options">
+         <ul class="popup__list">
+            <li class="popup__item">
+               <button class="button-reset">Смотреть анкету</button>
+            </li>
+            <li class="popup__item">
+               <button class="button-reset" data-modal-btn="edit-respond">Редактировать</button>
+            </li>
+            <li class="popup__item">
+               <button class="button-reset">Удалить</button>
+            </li>
+            <li class="popup__item">
+               <button class="button-reset">Отправить письмо</button>
+            </li>
+            <li class="popup__item">
+               <button class="button-reset">Пригласить в</button>
+            </li>
+         </ul>
+      </div>
+      <table class="respondents-list">
+         <thead>
+            <tr>
+               <th>
+                  <label class="checkbox respondents-list__label">
+                     <input class="checkbox__input" name="all" type="checkbox">
+                     <div class="checkbox__check"></div>
+                  </label>
+               </th>
+               <th>ФИО</th>
+               <th>Пол</th>
+               <th>Возраст</th>
+               <th>Образование</th>
+               <th>Место жительства</th>
+               <th>Семейное положение</th>
+               <th>Телефон</th>
+               <th>Тэги</th>
+               <th></th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td>
+                  <label class="checkbox respondents-list__label">
+                     <input class="checkbox__input" name="respondent" type="checkbox">
+                     <div class="checkbox__check"></div>
+                  </label>
+               </td>
+               <td>Иванов Максимилиан Альфредович</td>
+               <td>М</td>
+               <td>51</td>
+               <td>Высшее</td>
+               <td>Санкт-Петербург</td>
+               <td>Состоит в браке</td>
+               <td>+7 999 451 45 45</td>
+               <td>Есть дети, Машина</td>
+               <td>
+                  <button class="button-reset more-functions" data-popup-btn="respond-options">
+                     <svg><use xlink:href="img/icons/icons.svg#dots"></use></svg>
+                  </button>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <label class="checkbox respondents-list__label">
+                     <input class="checkbox__input" name="respondent" type="checkbox">
+                     <div class="checkbox__check"></div>
+                  </label>
+               </td>
+               <td>Петрова Яна Олеговна</td>
+               <td>Ж</td>
+               <td>22</td>
+               <td>Студент</td>
+               <td>Санкт-Петербург</td>
+               <td>Не был(а) в браке</td>
+               <td>+7 999 000 00 00</td>
+               <td>Есть дети, Машина, Дача, Спорт, Вегетарианец</td>
+               <td>
+                  <button class="button-reset more-functions">
+                     <svg><use xlink:href="img/icons/icons.svg#dots"></use></svg>
+                  </button>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <label class="checkbox respondents-list__label">
+                     <input class="checkbox__input" name="respondent" type="checkbox">
+                     <div class="checkbox__check"></div>
+                  </label>
+               </td>
+               <td>Красильникова Елена Николаевна</td>
+               <td>Ж</td>
+               <td>40</td>
+               <td>Высшее</td>
+               <td>Москва</td>
+               <td>Состоит в браке</td>
+               <td>+7 999 801 12 54</td>
+               <td>Метеоролог, Дача</td>
+               <td>
+                  <button class="button-reset more-functions">
+                     <svg><use xlink:href="img/icons/icons.svg#dots"></use></svg>
+                  </button>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+   </div>
 
    <div class="main__btns">
       <button class="button" disabled>Пригласить респондентов в проект</button>
-      <button class="button main__add-btn">Добавить респондента</button>
+      <button class="button main__add-btn" data-popup-btn="add-respond">Добавить респондента</button>
+      <div class="popup main__btns-popup" data-popup-target="add-respond">
+         <ul class="popup__list">
+            <li class="popup__item">
+               <button class="button-reset" data-modal-btn="add-respond">Добавить одного респондента</button>
+            </li>
+            <li class="popup__item">
+               <button class="button-reset">Импорт из Excel</button>
+            </li>
+         </ul>
+      </div>
    </div>
    
    </div>

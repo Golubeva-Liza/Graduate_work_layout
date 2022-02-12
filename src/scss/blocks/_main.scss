@@ -1,7 +1,10 @@
 .main{
    padding: 73px 55px 60px 39px;
-   width: auto;
+   flex: 1;
    position: relative;
+   &__table-container{
+      position: relative;
+   }
    &__btns{
       position: absolute;
       bottom: 60px;
@@ -19,11 +22,20 @@
          content: '';
          width: 14px;
          height: 14px;
-         background-image: url('../../resourses/icons/add.svg');
+         background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7 0C7.5523 0 8 0.44772 8 1V6H13C13.5523 6 14 6.4477 14 7C14 7.5523 13.5523 8 13 8H8V13C8 13.5523 7.5523 14 7 14C6.4477 14 6 13.5523 6 13V8H1C0.44772 8 0 7.5523 0 7C0 6.4477 0.44771 6 1 6H6V1C6 0.44772 6.4477 0 7 0Z' fill='white'/%3E%3C/svg%3E%0A");
          position: absolute;
          top: 50%;
          transform: translateY(-50%);
-         right: 16px;
+         right: 13px;
       }
+   }
+   &__respondent-options{
+      // width: 220px;
+      top: calc(47px * 2);
+      right: 15px;
+   }
+   &__btns-popup{
+      top: -100px;
+      right: 0;
    }
 }

@@ -1,11 +1,12 @@
 .aside{
    padding: 73px 39px;
    height: 100vh;
+   min-width: 338px;
    width: 338px;
    border-right: 1px solid #979797;
    &__search{
       position: relative;
-      margin-bottom: 120px;
+      margin-bottom: 90px;
       &::before{
          content: '';
          width: 15px;
