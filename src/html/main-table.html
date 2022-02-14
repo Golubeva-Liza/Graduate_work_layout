@@ -16,10 +16,28 @@
                <button class="button-reset">Отправить письмо</button>
             </li>
             <li class="popup__item">
-               <button class="button-reset">Пригласить в</button>
+               <button class="button-reset" data-popup-btn="invite-to-proj">Пригласить в проект</button>
+               <div class="popup main__invite-to-proj" data-popup-target="invite-to-proj">
+                  <ul class="popup__list">
+                     <li class="popup__item">
+                        <button class="button-reset">Расписание1</button>
+                     </li>
+                     <li class="popup__item">
+                        <button class="button-reset">1 семестр 2019</button>
+                     </li>
+                     <li class="popup__item">
+                        <button class="button-reset">Кампания Google март 2018 </button>
+                     </li>
+                     <li class="popup__item">
+                        <button class="button-reset">Расписание на зиму 2018</button>
+                     </li>
+                  </ul>
+               </div>
             </li>
          </ul>
+         
       </div>
+      
       <table class="respondents-list">
          <thead>
             <tr>
@@ -117,7 +135,7 @@
                <button class="button-reset" data-modal-btn="add-respond">Добавить одного респондента</button>
             </li>
             <li class="popup__item">
-               <button class="button-reset">Импорт из Excel</button>
+               <button class="button-reset" data-modal-btn="add-file">Импорт из Excel</button>
             </li>
          </ul>
       </div>

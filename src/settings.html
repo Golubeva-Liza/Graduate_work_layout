@@ -7,16 +7,17 @@
    <div class="wrapper">
       @@include('html/header.html', {
          "projects": "",
-         "respondents": "header__item_active",
-         "settings": ""
+         "respondents": "",
+         "settings": "header__item_active"
       })
-      @@include('html/settings-aside.html')
-      @@include('html/main-table.html')
+      @@include('html/account-settings.html')
+      <main class="settings-main">
+         <img src="@img/settings-bg.jpg" alt="settings">
+      </main>
    </div>
 
    <!-- модальные окна -->
-   @@include('html/modals/modal-edit-respond.html')
-   @@include('html/modals/modal-add-respond.html')
+   @@include('html/modals/modal-change-password.html')
    @@include('html/modals/modal-add-file.html')
    <script src="js/script.min.js"></script>
 </body>

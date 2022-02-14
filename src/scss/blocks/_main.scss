@@ -30,9 +30,13 @@
       }
    }
    &__respondent-options{
-      // width: 220px;
       top: calc(47px * 2);
       right: 15px;
+   }
+   &__invite-to-proj{
+      top: 0;
+      right: 190px;
+      white-space: nowrap;
    }
    &__btns-popup{
       top: -100px;

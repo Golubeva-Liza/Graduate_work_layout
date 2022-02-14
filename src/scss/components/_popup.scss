@@ -12,13 +12,14 @@
       font-weight: 500;
       font-size: 18px;
       line-height: 22px;
+      position: relative;
       &:not(:last-child){
          margin-bottom: 16px;
       }
       button{
          transition: all 0.3s;
       }
-      &:hover button{
+      &:hover > button{
          color: $main-blue;
       }
    }

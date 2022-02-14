@@ -1,0 +1,44 @@
+.modal-add-file{
+   &__content{
+      width: 275px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 45px 50px;
+   }
+   &__arrow{
+      width: 68px;
+      height: 68px;
+      margin-bottom: 14px;
+      svg{
+         width: 100%;
+         height: 100%;
+      }
+   }
+   &__title{
+      font-weight: 500;
+      font-size: 21px;
+      line-height: 25px;
+      margin-bottom: 8px;
+   }
+   &__descr{
+      margin-bottom: 30px;
+      font-size: 13px;
+      line-height: 16px;
+      color: rgba($color: $main-color, $alpha: 0.4);
+   }
+   &__btn{
+      width: 155px;
+   }
+}
+
+.modal-change-password{
+   &__content{
+      width: 350px;
+   }
+}
+.modal-share-shedule{
+   &__content{
+      width: 350px;
+   }
+}

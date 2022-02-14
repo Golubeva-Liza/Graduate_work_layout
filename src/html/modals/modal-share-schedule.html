@@ -1,0 +1,21 @@
+<div class="modal modal-share-shedule" data-modal-target="share-shedule">
+   <div class="modal__body">
+      <div class="modal__content modal-share-shedule__content">
+         <h3 class="modal__title">Поделиться ссылкой</h3>
+         <form class="modal__form" action="/" method="POST">
+            <label class="modal__label">
+               <span class="modal__input-name">Почта</span>
+               <input class="input modal__input" type="email" name="email" autocomplete="off" placeholder="Введите почту">
+            </label>
+            <label class="modal__label">
+               <span class="modal__input-name">Комментарий</span>
+               <textarea class="input modal__textarea" name="comment" placeholder="Ваш комментарий"></textarea>
+            </label>
+            <div class="modal__btns">
+               <button class="button-reset button modal__btn modal__close" type="button" data-modal-close>Отмена</button>
+               <button class="button-reset button modal__btn modal__ready" type="submit" disabled>Готово</button>
+            </div>
+         </form>
+      </div>
+   </div>
+</div>

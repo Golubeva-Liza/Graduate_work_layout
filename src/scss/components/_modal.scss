@@ -104,6 +104,11 @@
          background-color: $red-hover !important;
       }
    }
+   &__textarea{
+      resize: none;
+      padding: 10px 14px;
+      height: 115px;
+   }
 }
 
 .modal.show{

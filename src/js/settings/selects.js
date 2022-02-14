@@ -1,6 +1,6 @@
 import {Select} from '../modules/select.js';
 function selectSettings(){
-   if (document.querySelector('.aside')){
+   if (document.querySelector('.settings-aside')){
       new Select('#select-sex', {
          placeholder: 'Не важно',
          data: [
@@ -41,7 +41,7 @@ function selectSettings(){
          ]
       });
    }
-   if (document.querySelector('.modal')){
+   if (document.querySelector('.modal_respond')){
       new Select('#select-modal-education', {
          placeholder: 'Не важно',
          data: [

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="icon" href="/favicon.ico">
+   <title>Главная</title>
+   <!-- <link rel="stylesheet" href="assets/css/animate.min.css?_v=20220214214743"> -->
+   <link rel="stylesheet" href="css/style.min.css?_v=20220214214743">
+</head>
+<body>
+   <div class="wrapper">
+      <header class="header">
+   <button class="button-reset header__arrow">
+      <svg><use xlink:href="img/icons/icons.svg#arrow-left"></use></svg>
+   </button>
+   <div class="header__profile-photo">
+      <img src="img/example.jpg" alt="avatar">
+   </div>
+   <div class="main-title header__profile-name">
+      Лиза Голубева
+   </div>
+   <nav class="header__nav">
+      <ul class="header__list">
+         <li class="header__item ">
+            <a href="projects.html" class="header__link">
+               <svg class="header__icon"><use xlink:href="img/icons/icons.svg#calendar"></use></svg>
+               <span class="main-title header__nav-text">Проекты</span>
+            </a>
+         </li>
+         <li class="header__item ">
+            <a href="index.html" class="header__link">
+               <svg class="header__icon"><use xlink:href="img/icons/icons.svg#respondents"></use></svg>
+               <span class="main-title header__nav-text">Респонденты</span>
+            </a>
+         </li>
+         <li class="header__item header__item_active" >
+            <a href="settings.html" class="header__link">
+               <svg class="header__icon"><use xlink:href="img/icons/icons.svg#settings"></use></svg>
+               <span class="main-title header__nav-text">Настройки</span>
+            </a>
+         </li>
+      </ul>
+   </nav>
+</header>
+      <aside class="account-settings">
+   <div class="account-settings__photo">
+      <button class="button-reset account-settings__photo-btn" data-popup-btn="add-profile-photo">
+         <img src="img/example.jpg" alt="avatar">
+      </button>
+      <div class="popup account-settings__add-photo" data-popup-target="add-profile-photo">
+         <ul class="popup__list">
+            <li class="popup__item">
+               <button class="button-reset" data-modal-btn="add-file">Загрузить новую</button>
+            </li>
+            <li class="popup__item">
+               <button class="button-reset">Удалить</button>
+            </li>
+         </ul>
+      </div>
+   </div>
+   
+   <span class="account-settings__name">Лиза Голубева</span>
+   <div class="account-settings__setting">
+      <label class="account-settings__label">
+         <span class="account-settings__setting-title">Логин</span>
+         <span class="account-settings__setting-value">Лиза Голубева</span>
+         <input type="text" class="input visually-hidden" placeholder="Лиза Голубева">
+      </label>
+      <button class="button-reset account-settings__edit" data-btn="edit-setting">
+         <svg><use xlink:href="img/icons/icons.svg#edit"></use></svg>
+      </button>
+   </div>
+   <div class="account-settings__setting">
+      <label class="account-settings__label">
+         <span class="account-settings__setting-title">Почтовый адрес</span>
+         <span class="account-settings__setting-value">someEmail@yandex.ru</span>
+         <input type="text" class="input visually-hidden" placeholder="someEmail@yandex.ru">
+      </label>
+      <button class="button-reset account-settings__edit" data-btn="edit-setting">
+         <svg><use xlink:href="img/icons/icons.svg#edit"></use></svg>
+      </button>
+   </div>
+   <button class="button-reset account-settings__password" data-modal-btn="change-password">Изменить пароль</button>
+   <button class="button-reset button account-settings__logout">Выйти из системы</button>
+</aside>
+      <main class="settings-main">
+         <img src="img/settings-bg.jpg" alt="settings">
+      </main>
+   </div>
+
+   <!-- модальные окна -->
+   <div class="modal modal-change-password" data-modal-target="change-password">
+   <div class="modal__body">
+      <div class="modal__content modal-change-password__content">
+         <h3 class="modal__title">Изменить пароль</h3>
+         <form class="modal__form" action="/" method="POST">
+            <label class="modal__label">
+               <span class="modal__input-name">Старый пароль</span>
+               <input class="input modal__input" type="password" name="name" autocomplete="off" placeholder="Введите ФИО">
+            </label>
+            <label class="modal__label">
+               <span class="modal__input-name">Новый пароль</span>
+               <input class="input modal__input" type="password" name="email" autocomplete="off" placeholder="Введите почту">
+            </label>
+            <label class="modal__label">
+               <span class="modal__input-name">Повторите пароль</span>
+               <input class="input modal__input" type="password" name="phone" autocomplete="off" placeholder="Введите номер телефона">
+            </label>
+            <div class="modal__btns">
+               <button class="button-reset button modal__btn modal__close" type="button" data-modal-close>Отмена</button>
+               <button class="button-reset button modal__btn modal__ready" type="submit" disabled>Готово</button>
+            </div>
+         </form>
+      </div>
+   </div>
+</div>
+   <div class="modal modal-add-file" data-modal-target="add-file">
+   <div class="modal__body">
+      <div class="modal__content modal-add-file__content">
+         <button class="button-reset modal-add-file__arrow">
+            <svg><use xlink:href="img/icons/icons.svg#upload"></use></svg>
+         </button>
+         <h3 class="modal-add-file__title">Добавить файлы</h3>
+         <span class="modal-add-file__descr">Drag & Drop или</span>
+         <form class="modal__form" action="/" method="POST">
+            <!-- <input type="file"> -->
+            <button class="button-reset button modal__btn modal-add-file__btn" type="button">Выбрать файл</button>
+         </form>
+      </div>
+   </div>
+</div>
+   <script src="js/script.min.js?_v=20220214214743"></script>
+</body>
+</html>

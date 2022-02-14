@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="icon" href="/favicon.ico">
+   <title>Главная</title>
+   <!-- <link rel="stylesheet" href="assets/css/animate.min.css?_v=20220214214743"> -->
+   <link rel="stylesheet" href="css/style.min.css?_v=20220214214743">
+</head>
+<body>
+   <div class="wrapper">
+      <header class="header">
+   <button class="button-reset header__arrow">
+      <svg><use xlink:href="img/icons/icons.svg#arrow-left"></use></svg>
+   </button>
+   <div class="header__profile-photo">
+      <img src="img/example.jpg" alt="avatar">
+   </div>
+   <div class="main-title header__profile-name">
+      Лиза Голубева
+   </div>
+   <nav class="header__nav">
+      <ul class="header__list">
+         <li class="header__item header__item_active">
+            <a href="projects.html" class="header__link">
+               <svg class="header__icon"><use xlink:href="img/icons/icons.svg#calendar"></use></svg>
+               <span class="main-title header__nav-text">Проекты</span>
+            </a>
+         </li>
+         <li class="header__item ">
+            <a href="index.html" class="header__link">
+               <svg class="header__icon"><use xlink:href="img/icons/icons.svg#respondents"></use></svg>
+               <span class="main-title header__nav-text">Респонденты</span>
+            </a>
+         </li>
+         <li class="header__item " >
+            <a href="settings.html" class="header__link">
+               <svg class="header__icon"><use xlink:href="img/icons/icons.svg#settings"></use></svg>
+               <span class="main-title header__nav-text">Настройки</span>
+            </a>
+         </li>
+      </ul>
+   </nav>
+</header>
+      <aside class="projects-aside">
+   <div class="calendar calendar_small projects-aside__calendar" data-calendar="small">
+      <div class="calendar__month">
+         <button class="button-reset calendar__arrow">
+            <svg><use xlink:href="img/icons/icons.svg#calendar-arrow-small"></use></svg>
+         </button>
+         <p><span class="calendar__month-name"></span> <span class="calendar__year"></span></p>
+         <button class="button-reset calendar__arrow">
+            <svg><use xlink:href="img/icons/icons.svg#calendar-arrow-small"></use></svg>
+         </button>
+      </div>
+      <div class="calendar__weekdays">
+         <div>Пн</div>
+         <div>Вт</div>
+         <div>Ср</div>
+         <div>Чт</div>
+         <div>Пт</div>
+         <div>Сб</div>
+         <div>Вс</div>
+      </div>
+      <div class="calendar__days"></div>
+   </div>
+   <div class="accordion accordion_active projects-aside__project">
+      <button class="button-reset accordion__header">1 семестр 2019</button>
+      <div class="accordion__body">
+         <ul class="accordion__list">
+            <li class="accordion__list-item ">
+               <span class="accordion__time">с 12.12.19 по 31.12.19</span>
+            </li>
+            <li class="accordion__list-item">
+               <button class="button-reset accordion__btn">Редактировать</button>
+            </li>
+            <li class="accordion__list-item">
+               <button class="button-reset accordion__btn">Копировать ссылку</button>
+            </li>
+            <li class="accordion__list-item">
+               <button class="button-reset accordion__btn">Удалить</button>
+            </li>
+            <li class="accordion__list-item">
+               <button class="button-reset accordion__btn" data-modal-btn="share-shedule">Режим совместной работы</button>
+            </li>
+         </ul>
+      </div>
+   </div>
+   <div class="accordion projects-aside__project">
+      <button class="button-reset accordion__header">Кампания Google март 2018 </button>
+      <div class="accordion__body">
+         <ul class="accordion__list">
+            <li class="accordion__list-item ">
+               <span class="accordion__time">с 12.12.19 по 31.12.19</span>
+            </li>
+            <li class="accordion__list-item">
+               <button class="button-reset accordion__btn">Редактировать</button>
+            </li>
+            <li class="accordion__list-item">
+               <button class="button-reset accordion__btn">Копировать ссылку</button>
+            </li>
+            <li class="accordion__list-item">
+               <button class="button-reset accordion__btn">Удалить</button>
+            </li>
+            <li class="accordion__list-item">
+               <button class="button-reset accordion__btn">Режим совместной работы</button>
+            </li>
+         </ul>
+      </div>
+   </div>
+   <div class="accordion projects-aside__project">
+      <button class="button-reset accordion__header">Расписание на зиму 2018</button>
+      <div class="accordion__body">
+         <ul class="accordion__list">
+            <li class="accordion__list-item ">
+               <span class="accordion__time">с 12.12.19 по 31.12.19</span>
+            </li>
+            <li class="accordion__list-item">
+               <button class="button-reset accordion__btn">Редактировать</button>
+            </li>
+            <li class="accordion__list-item">
+               <button class="button-reset accordion__btn">Копировать ссылку</button>
+            </li>
+            <li class="accordion__list-item">
+               <button class="button-reset accordion__btn">Удалить</button>
+            </li>
+            <li class="accordion__list-item">
+               <button class="button-reset accordion__btn">Режим совместной работы</button>
+            </li>
+         </ul>
+      </div>
+   </div>
+
+   <button class="button-reset button projects-aside__btn" data-modal-btn="new-project">Создать новый проект</button>
+</aside>
+      <section class="moder-calendar">
+   <div class="calendar moder-calendar__calendar" data-calendar="main">
+      <div class="calendar__month">
+         <button class="button-reset calendar__arrow">
+            <svg><use xlink:href="img/icons/icons.svg#calendar-arrow"></use></svg>
+         </button>
+         <p><span class="calendar__month-name"></span> <span class="calendar__year"></span></p>
+         <button class="button-reset calendar__arrow">
+            <svg><use xlink:href="img/icons/icons.svg#calendar-arrow"></use></svg>
+         </button>
+      </div>
+      <div class="calendar__weekdays">
+         <div>Пн</div>
+         <div>Вт</div>
+         <div>Ср</div>
+         <div>Чт</div>
+         <div>Пт</div>
+         <div>Сб</div>
+         <div>Вс</div>
+      </div>
+      <div class="calendar__days"></div>
+   </div>
+   <div class="moder-calendar__hint"></div>
+   <div class="moder-calendar__hint"></div>
+
+   <button class="button-reset button moder-calendar__btn">Посмотреть все записи</button>
+</section>
+      <section class="respond-recordings">
+   <h2 class="respond-recordings__title">Записи респондентов (<span>7</span>)</h2>
+   <div class="respond-recordings__content">
+      <!-- popup -->
+      <div class="popup recording__popup" data-popup-target="respond-recording">
+         <ul class="popup__list">
+            <li class="popup__item">
+               <button class="button-reset">Отправить письмо</button>
+            </li>
+            <li class="popup__item">
+               <button class="button-reset">Редактировать</button>
+            </li>
+            <li class="popup__item">
+               <button class="button-reset">Удалить</button>
+            </li>
+            <li class="popup__item">
+               <button class="button-reset">Пригласить в проект</button>
+            </li>
+         </ul>
+      </div>
+      <div class="respond-recordings__per-day">
+         <h3 class="respond-recordings__date">12 февраля</h3>
+         <div class="recording respond-recordings__recording">
+            <span class="recording__time">13:00-14:00</span>
+            <div class="recording__content">
+               <span class="recording__name">Ольга</span>
+               <span class="recording__email">olgavolga@gmail.com</span>
+               <span class="recording__comment">Очень интересно</span>
+               <button class="button-reset more-functions recording__btn" data-popup-btn="respond-recording">
+                  <svg><use xlink:href="img/icons/icons.svg#dots"></use></svg>
+               </button>
+            </div>
+         </div>
+      </div>
+      <div class="respond-recordings__per-day">
+         <h3 class="respond-recordings__date">16 февраля</h3>
+         <div class="recording respond-recordings__recording">
+            <span class="recording__time">9:00-10:00</span>
+            <div class="recording__content">
+               <span class="recording__name">Тимур Николаевич</span>
+               <span class="recording__email">timnik@gmail.com</span>
+               <!-- <span class="recording__comment"></span> -->
+               <button class="button-reset more-functions recording__btn">
+                  <svg><use xlink:href="img/icons/icons.svg#dots"></use></svg>
+               </button>
+            </div>
+         </div>
+         <div class="recording respond-recordings__recording">
+            <span class="recording__time">11:00-12:00</span>
+            <div class="recording__content">
+               <span class="recording__name">Константин</span>
+               <span class="recording__email">kostyahover@yandex.ru</span>
+               <!-- <span class="recording__comment"></span> -->
+               <button class="button-reset more-functions recording__btn">
+                  <svg><use xlink:href="img/icons/icons.svg#dots"></use></svg>
+               </button>
+            </div>
+         </div>
+         <div class="recording respond-recordings__recording">
+            <span class="recording__time">17:00-18:00</span>
+            <div class="recording__content">
+               <span class="recording__name">Владислав Маслёнников</span>
+               <span class="recording__email">masleonka@gmail.com</span>
+               <span class="recording__comment">Пожалуйста, приглашайте меня на тестирования, связанный также с финансовыми отчётами, бухгалтерией и т.д., так как я финансист</span>
+               <button class="button-reset more-functions recording__btn">
+                  <svg><use xlink:href="img/icons/icons.svg#dots"></use></svg>
+               </button>
+            </div>
+         </div>
+      </div>
+      <div class="respond-recordings__per-day">
+         <h3 class="respond-recordings__date">25 февраля</h3>
+         <div class="recording respond-recordings__recording">
+            <span class="recording__time">10:00-11:00</span>
+            <div class="recording__content">
+               <span class="recording__name">Анна</span>
+               <span class="recording__email">annakovalenko@gmail.com</span>
+               <span class="recording__comment">Добрый вечер. Если случится форс-мажор и запись перенесётся, прошу позвонить мне по номеру +7 808 487 44 25</span>
+               <button class="button-reset more-functions recording__btn">
+                  <svg><use xlink:href="img/icons/icons.svg#dots"></use></svg>
+               </button>
+            </div>
+         </div>
+         <div class="recording respond-recordings__recording">
+            <span class="recording__time">14:00-15:00</span>
+            <div class="recording__content">
+               <span class="recording__name">Виктор Иннокентьевич</span>
+               <span class="recording__email">bestvictor@mail.ru</span>
+               <span class="recording__comment">Я на самом деле не автослесарь, но 10 лет владел автомастерской, поэтому считаю, что подойду для тестирования</span>
+               <button class="button-reset more-functions recording__btn">
+                  <svg><use xlink:href="img/icons/icons.svg#dots"></use></svg>
+               </button>
+            </div>
+         </div>
+         <div class="recording respond-recordings__recording">
+            <span class="recording__time">17:00-18:00</span>
+            <div class="recording__content">
+               <span class="recording__name">Владислав Маслёнников</span>
+               <span class="recording__email">masleonka@gmail.com</span>
+               <span class="recording__comment">Пожалуйста, приглашайте меня на тестирования, связанный также с финансовыми отчётами, бухгалтерией и т.д., так как я финансист</span>
+               <button class="button-reset more-functions recording__btn">
+                  <svg><use xlink:href="img/icons/icons.svg#dots"></use></svg>
+               </button>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+   </div>
+
+   <div class="modal modal-share-shedule" data-modal-target="share-shedule">
+   <div class="modal__body">
+      <div class="modal__content modal-share-shedule__content">
+         <h3 class="modal__title">Поделиться ссылкой</h3>
+         <form class="modal__form" action="/" method="POST">
+            <label class="modal__label">
+               <span class="modal__input-name">Почта</span>
+               <input class="input modal__input" type="email" name="email" autocomplete="off" placeholder="Введите почту">
+            </label>
+            <label class="modal__label">
+               <span class="modal__input-name">Комментарий</span>
+               <textarea class="input modal__textarea" name="comment" placeholder="Ваш комментарий"></textarea>
+            </label>
+            <div class="modal__btns">
+               <button class="button-reset button modal__btn modal__close" type="button" data-modal-close>Отмена</button>
+               <button class="button-reset button modal__btn modal__ready" type="submit" disabled>Готово</button>
+            </div>
+         </form>
+      </div>
+   </div>
+</div>
+   <div class="modal modal-new-project" data-modal-target="new-project">
+   <div class="modal__body">
+      <div class="modal__content">
+         <h3 class="modal__title">Добавить респондента</h3>
+         <form class="modal__form" action="/" method="POST">
+            <label class="modal__label">
+               <span class="modal__input-name">ФИО</span>
+               <input class="input modal__input" type="text" name="name" autocomplete="off" placeholder="Введите ФИО">
+            </label>
+            <label class="modal__label">
+               <span class="modal__input-name">Почта</span>
+               <input class="input modal__input" type="email" name="email" autocomplete="off" placeholder="Введите почту">
+            </label>
+            <label class="modal__label">
+               <span class="modal__input-name">Телефон</span>
+               <input class="input modal__input" type="tel" name="phone" autocomplete="off" placeholder="Введите номер телефона">
+            </label>
+            <div class="modal__label">
+               <span class="modal__input-name">Пол</span>
+               <div class="modal__some-inputs">
+                  <label class="checkbox modal__sex">
+                     <span>Мужской</span>
+                     <input class="visually-hidden checkbox__input" checked type="radio" name="sex" value="male">
+                     <div class="checkbox__check"></div>
+                  </label>
+                  <label class="checkbox modal__sex">
+                     <span>Женский</span>
+                     <input class="visually-hidden checkbox__input" type="radio" name="sex" value="female">
+                     <div class="checkbox__check"></div>
+                  </label>
+               </div>
+            </div>
+            <label class="modal__label">
+               <span class="modal__input-name">Дата рождения / возраст</span>
+               <div class="modal__some-inputs modal__date">
+                  <input class="input modal__input" type="date" name="birthday-date" placeholder="Дата">
+                  <input class="input modal__input" type="number" name="age" placeholder="0">
+               </div>
+            </label>
+            <label class="modal__label">
+               <span class="modal__input-name">Образование</span>
+               <div id="select-modal-education-2"></div>
+            </label>
+            <label class="modal__label">
+               <span class="modal__input-name">Место жительства</span>
+               <input class="input modal__input" type="text" name="name" autocomplete="off" placeholder="Город">
+            </label>
+            <label class="modal__label">
+               <span class="modal__input-name">Семейное положение</span>
+               <div id="select-modal-fs-2"></div>
+            </label>
+            <label class="modal__label">
+               <span class="modal__input-name">Добавить тэги</span>
+               <div class="modal__some-inputs modal__tags-input">
+                  <input class="input modal__input" type="text" name="name" autocomplete="off" placeholder="Название тэга">
+                  <button class="button-reset button modal__tag-btn" disabled type="button">
+                     <svg><use xlink:href="img/icons/icons.svg#add"></use></svg>
+                  </button>
+               </div>
+            </label>
+
+            <div class="modal__btns">
+               <button class="button-reset button modal__btn modal__close" type="button" data-modal-close>Отмена</button>
+               <button class="button-reset button modal__btn modal__ready" type="submit">Готово</button>
+            </div>
+         </form>
+      </div>
+   </div>
+</div>
+   <script src="js/script.min.js?_v=20220214214743"></script>
+</body>
+</html>

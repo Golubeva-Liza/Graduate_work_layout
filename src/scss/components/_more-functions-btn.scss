@@ -1,0 +1,14 @@
+.more-functions{
+   width: 24px;
+   height: 24px;
+   background-color: transparent;
+   svg{
+      width: 16px;
+      height: 4px;
+      fill: $main-grey;
+      pointer-events: none;
+   }
+   &:hover svg{
+      fill: rgba($color: #2C2C2C, $alpha: 0.4);
+   }
+}

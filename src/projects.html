@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+   @@include('html/head.html', {
+      "title": "Главная"
+   })
+<body>
+   <div class="wrapper">
+      @@include('html/header.html', {
+         "projects": "header__item_active",
+         "respondents": "",
+         "settings": "",
+      })
+      @@include('html/projects-aside.html')
+      @@include('html/moder-calendar.html')
+      @@include('html/respond-recordings.html')
+   </div>
+
+   @@include('html/modals/modal-share-schedule.html')
+   @@include('html/modals/modal-new-project.html')
+   <script src="js/script.min.js"></script>
+</body>
+</html>

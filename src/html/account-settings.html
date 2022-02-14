@@ -1,0 +1,41 @@
+<aside class="account-settings">
+   <div class="account-settings__photo">
+      <button class="button-reset account-settings__photo-btn" data-popup-btn="add-profile-photo">
+         <img src="@img/example.jpg" alt="avatar">
+      </button>
+      <div class="popup account-settings__add-photo" data-popup-target="add-profile-photo">
+         <ul class="popup__list">
+            <li class="popup__item">
+               <button class="button-reset" data-modal-btn="add-file">Загрузить новую</button>
+            </li>
+            <li class="popup__item">
+               <button class="button-reset">Удалить</button>
+            </li>
+         </ul>
+      </div>
+   </div>
+   
+   <span class="account-settings__name">Лиза Голубева</span>
+   <div class="account-settings__setting">
+      <label class="account-settings__label">
+         <span class="account-settings__setting-title">Логин</span>
+         <span class="account-settings__setting-value">Лиза Голубева</span>
+         <input type="text" class="input visually-hidden" placeholder="Лиза Голубева">
+      </label>
+      <button class="button-reset account-settings__edit" data-btn="edit-setting">
+         <svg><use xlink:href="img/icons/icons.svg#edit"></use></svg>
+      </button>
+   </div>
+   <div class="account-settings__setting">
+      <label class="account-settings__label">
+         <span class="account-settings__setting-title">Почтовый адрес</span>
+         <span class="account-settings__setting-value">someEmail@yandex.ru</span>
+         <input type="text" class="input visually-hidden" placeholder="someEmail@yandex.ru">
+      </label>
+      <button class="button-reset account-settings__edit" data-btn="edit-setting">
+         <svg><use xlink:href="img/icons/icons.svg#edit"></use></svg>
+      </button>
+   </div>
+   <button class="button-reset account-settings__password" data-modal-btn="change-password">Изменить пароль</button>
+   <button class="button-reset button account-settings__logout">Выйти из системы</button>
+</aside>
