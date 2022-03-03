@@ -1,4 +1,7 @@
 .checkbox{
+   display: flex;
+   align-items: center;
+   cursor: pointer;
    &__check{
       border: 1px solid $main-grey;
       border-radius: 4px;
@@ -15,5 +18,10 @@
          background-size: cover;
       }
    }
-
+   span{
+      margin-left: 8px;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 16px;
+   }
 }

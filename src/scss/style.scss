@@ -44,6 +44,19 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
 
+.my-container{
+   width: 1440px;
+   padding: 0 15px;
+   margin: 0 auto;
+}
+.respondent-main{
+   height: calc(100vh - 72px);
+   .my-container{
+      display: flex;
+      height: 100%;
+   }
+}
+
 
 //components
 @import 'components/button';
@@ -58,10 +71,15 @@ input::-webkit-inner-spin-button {
 @import 'components/calendar';
 @import 'components/recording';
 @import 'components/more-functions-btn';
+@import 'components/progress';
+@import 'components/radio-inputs';
+@import 'components/input-btns';
+@import 'components/range-slider';
 
 
 //blocks
 @import 'blocks/header';
+@import 'blocks/header-top';
 @import 'blocks/settings-aside';
 @import 'blocks/main';
 @import 'blocks/respondents-list';
@@ -70,6 +88,12 @@ input::-webkit-inner-spin-button {
 @import 'blocks/projects-aside';
 @import 'blocks/moder-calendar';
 @import 'blocks/respond-recordings';
+@import 'blocks/log-reg-forms';
+@import 'blocks/customer-greeting';
+@import 'blocks/customer-done';
+@import 'blocks/respondent-about';
+@import 'blocks/respondent-calendar';
+@import 'blocks/respondent-settings';
 
 
 .visually-hidden{

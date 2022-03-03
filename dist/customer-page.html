@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="icon" href="/favicon.ico">
+   <title>BookMe</title>
+   <!-- <link rel="stylesheet" href="assets/css/animate.min.css?_v=20220221171553"> -->
+   <link rel="stylesheet" href="css/style.min.css?_v=20220221171553">
+</head>
+<body>
+   <header class="header-top">
+   <div class="my-container">
+      <p class="header-top__name">BookMe</p>
+      <button class="button-reset header-top__sign-up">Зарегистрироваться</button>
+   </div>
+</header>
+   <main>
+      <section class="customer-greeting">
+   <div class="my-container">
+      <h1 class="customer-greeting__title">Добро пожаловать в BookMe!</h1>
+      <p class="customer-greeting__descr">Вас пригласили к созданию совместного расписания</p>
+      <p class="customer-greeting__text">
+         Вам будут представлены существующие настройки и расписание модератора Юзабилити-лаборатории.
+         <br><br>
+         Вы можете добавить удобное Вам время, после чего система сгенерирует общее расписание с совпадающими днями и отправит Вам его на почту.
+      </p>
+      <button class="button-reset button customer-greeting__btn" data-modal-btn="customer-schedule">Начать</button>
+   </div>
+</section>
+   </main>
+
+   <!-- модальные окна -->
+   <div class="modal modal-customer-schedule" data-modal-target="customer-schedule">
+   <div class="modal__body">
+      <form class="modal__form" action="/" method="POST">
+         <div class="modal__content modal-customer-schedule__content_1">
+            <h3 class="modal__title">Ваши данные</h3>
+            <label class="modal__label">
+               <span class="modal__input-name">ФИО</span>
+               <input class="input modal__input" type="text" name="name" autocomplete="off" placeholder="Ваше имя">
+            </label>
+            <label class="modal__label">
+               <span class="modal__input-name">Почта</span>
+               <input class="input modal__input" type="email" name="email" autocomplete="off" placeholder="Ваша почта">
+            </label>
+            <label class="modal__label">
+               <span class="modal__input-name">Телефон</span>
+               <input class="input modal__input" type="tel" name="phone" autocomplete="off" placeholder="Ваш номер телефона">
+            </label>
+            <div class="modal__bottom-btns">
+               <button class="button-reset button modal__btn modal__close" type="button" data-modal-close>Отмена</button>
+               <button class="button-reset button modal__btn modal__ready" type="button" data-modal-next>Приступить</button>
+            </div>
+         </div>
+         <div class="modal__content modal-customer-schedule__content_2">
+            <div class="modal__back">
+               <button class="button-reset modal__back-button" type="button" data-modal-prev>
+                  <svg><use xlink:href="img/icons/icons.svg#calendar-arrow-small"></use></svg>
+               </button>
+               <h3 class="modal__title">Основные параметры</h3>
+            </div>
+
+            <div class="modal__label">
+               <span class="modal__input-name">Проект1</span>
+               <p class="modal__value">Тестирование, направленнное на выявление потребностей автослесарей в универсальном приложении</p>
+            </div>
+            <label class="modal__label">
+               <span class="modal__input-name">Комментарий</span>
+               <textarea class="input modal__textarea" type="text" name="project-descr" autocomplete="off"
+                  placeholder="Коментарий к проекту"></textarea>
+            </label>
+            <div class="modal__label">
+               <span class="modal__input-name">Ссылка для приглашения</span>
+               <a href="#" class="modal__link">bookme.ru/maria/Proekt1</a>
+            </div>
+            <div class="modal__label">
+               <span class="modal__input-name">Длительность тестирования</span>
+               <p class="modal__value">45 минут</p>
+            </div>
+            <div class="modal__label modal__period">
+               <span class="modal__input-name">Период тестирования</span>
+               <div>
+                  С 
+                  <button class="button-reset" type="button">12.12.19</button>
+                  по 
+                  <button class="button-reset" type="button">31.12.19</button>
+               </div>
+            </div>
+
+            <div class="modal__btns modal__steps">
+               <div class="progress modal__progress">
+                  <div class="progress__line">
+                     <div class="progress__line-active"></div>
+                  </div>
+                  <div class="progress__step progress__step_active"></div>
+                  <div class="progress__step"></div>
+                  <div class="progress__step"></div>
+               </div>
+               <button class="button-reset button modal__btn modal__ready" type="button" data-modal-next>Выбор времени</button>
+            </div>
+         </div>
+         <div class="modal__content modal-customer-schedule__content_3">
+            <div class="modal-customer-schedule__top">
+               <div class="modal__back">
+                  <button class="button-reset modal__back-button" type="button" data-modal-prev>
+                     <svg><use xlink:href="img/icons/icons.svg#calendar-arrow-small"></use></svg>
+                  </button>
+                  <h3 class="modal__title">Создание расписания</h3>
+               </div>
+               <button class="button-reset button button_linear" type="button">Импорт из Google Календаря</button>
+            </div>
+
+            <div class="calendar modal-customer-schedule__calendar">
+               <div class="calendar__month">
+                  <button class="button-reset calendar__arrow">
+                     <svg><use xlink:href="img/icons/icons.svg#calendar-arrow"></use></svg>
+                  </button>
+                  <p><span class="calendar__month-name"></span> <span class="calendar__year"></span></p>
+                  <button class="button-reset calendar__arrow">
+                     <svg><use xlink:href="img/icons/icons.svg#calendar-arrow"></use></svg>
+                  </button>
+               </div>
+               <div class="calendar__weekdays">
+                  <div>Пн</div>
+                  <div>Вт</div>
+                  <div>Ср</div>
+                  <div>Чт</div>
+                  <div>Пт</div>
+                  <div>Сб</div>
+                  <div>Вс</div>
+               </div>
+               <div class="calendar__days"></div>
+            </div>
+
+            <div class="modal__btns modal__steps">
+               <div class="progress modal__progress">
+                  <div class="progress__line">
+                     <div class="progress__line-active"></div>
+                  </div>
+                  <div class="progress__step progress__step_done"></div>
+                  <div class="progress__step progress__step_active"></div>
+                  <div class="progress__step"></div>
+               </div>
+               <button class="button-reset button modal__btn modal__ready" type="button" data-modal-next>Готово</button>
+            </div>
+         </div>
+         <div class="modal__content modal-customer-schedule__content_4">
+            <div class="modal__back">
+               <button class="button-reset modal__back-button" type="button" data-modal-prev>
+                  <svg>
+                     <use xlink:href="img/icons/icons.svg#calendar-arrow-small"></use>
+                  </svg>
+               </button>
+               <h3 class="modal__title">Создание расписания</h3>
+            </div>
+            <p class="modal-customer-schedule__title">Укажите предпочтительный вариант присутствия на тестированиях</p>
+
+            <div class="radio-inputs modal-customer-schedule__radio">
+               <label>
+                  <input class="visually-hidden" type="radio" name="test-option" value="every-test">
+                  <span>Каждое тестирование</span>
+               </label>
+               <label>
+                  <input class="visually-hidden" type="radio" name="test-option" value="first-test">
+                  <span>Только первое тестирование</span>
+               </label>
+               <label>
+                  <input class="visually-hidden" type="radio" name="test-option" value="last-test">
+                  <span>Только последнее тестирование</span>
+               </label>
+               <label>
+                  <input class="visually-hidden" type="radio" name="test-option" value="first-and-last-test">
+                  <span>Первое и последнее тестирования</span>
+               </label>
+               <label>
+                  <input class="visually-hidden" type="radio" name="test-option" value="one-test">
+                  <span>Хотя бы одно тестирование (любое)</span>
+               </label>
+               <label>
+                  <input class="visually-hidden" type="radio" name="test-option" value="no-test">
+                  <span>Без присутствия на тестированиях</span>
+               </label>
+               <div class="modal__some-inputs modal-customer-schedule__other">
+                  <label>
+                     <input class="visually-hidden" type="radio" name="test-option" value="other">
+                     <span>Другое:</span>
+                  </label>
+                  <input class="input" type="text" name="test-other-text" placeholder="Укажите свои предпочтения">
+               </div>
+            </div>
+
+            <p class="modal-customer-schedule__descr">Модератор обязательно уведомит Вас о тестированиях в соответствии с вашим выбором</p>
+
+            <div class="modal__btns modal__steps">
+               <div class="progress modal__progress">
+                  <div class="progress modal__progress">
+                     <div class="progress__line">
+                        <div class="progress__line-active"></div>
+                     </div>
+                     <div class="progress__step progress__step_done"></div>
+                     <div class="progress__step progress__step_done"></div>
+                     <div class="progress__step progress__step_active"></div>
+                  </div>
+               </div>
+               <button class="button-reset button modal__btn modal__ready" type="button" data-modal-next>Готово</button>
+            </div>
+         </div>
+         <div class="modal__content modal-customer-schedule__content_last">
+            <div class="modal__back">
+               <button class="button-reset modal__back-button" type="button" data-modal-prev>
+                  <svg>
+                     <use xlink:href="img/icons/icons.svg#calendar-arrow-small"></use>
+                  </svg>
+               </button>
+               <h3 class="modal__title">Новое расписание</h3>
+            </div>
+            <span class="modal__input-name modal-customer-schedule__project-name">Расписание <span>Проект1</span> успешно создано!</span>
+            <a href="#" class="modal-customer-schedule__project-link">https://book.me/maria/Project1</a>
+
+            <div class="modal__btns modal__steps">
+               <div class="progress modal__progress">
+                  <div class="progress modal__progress">
+                     <div class="progress__line">
+                        <div class="progress__line-active"></div>
+                     </div>
+                     <div class="progress__step progress__step_done"></div>
+                     <div class="progress__step progress__step_done"></div>
+                     <div class="progress__step progress__step_done"></div>
+                  </div>
+               </div>
+               <a href="customer-schedule-done.html" class="button-reset button modal__btn modal__ready">Готово</a>
+            </div>
+         </div>
+      </form>
+   </div>
+</div>
+   <script src="js/script.min.js?_v=20220221171553"></script>
+</body>
+</html>

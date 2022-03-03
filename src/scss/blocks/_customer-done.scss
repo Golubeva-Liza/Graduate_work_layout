@@ -1,0 +1,23 @@
+.customer-done{
+   padding-top: 60px;
+   .my-container{
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      width: 1100px;
+   }
+   &__calendar{
+      width: 650px;
+   }
+   &__title{
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 24px;
+   }
+   &__descr{
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 16px;
+   }
+}

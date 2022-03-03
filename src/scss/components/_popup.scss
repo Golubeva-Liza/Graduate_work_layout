@@ -23,6 +23,12 @@
          color: $main-blue;
       }
    }
+   &__line{
+      margin-bottom: 16px;
+      background-color: $main-grey;
+      border: none;
+      height: 1px;
+   }
 }
 .popup.show{
    opacity: 1;

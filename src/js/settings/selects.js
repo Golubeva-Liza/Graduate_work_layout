@@ -83,6 +83,21 @@ function selectSettings(){
          ]
       });
    }
+   if (document.querySelector('.respondent-settings')){
+      new Select('#select-time', {
+         placeholder: 'Время',
+         data: [
+            {id: '1', value: '9:00-10:00'},
+            {id: '2', value: '10:00-11:00'},
+            {id: '3', value: '11:00-12:00'},
+            {id: '4', value: '12:00-13:00'},
+            {id: '5', value: '13:00-14:00'},
+            {id: '6', value: '14:00-15:00'},
+            {id: '7', value: '15:00-16:00'},
+            {id: '8', value: '16:00-17:00'}
+         ]
+      });
+   }
    
 }
 export default selectSettings;

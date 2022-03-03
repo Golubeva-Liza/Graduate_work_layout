@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="icon" href="/favicon.ico">
+   <title>BookMe</title>
+   <!-- <link rel="stylesheet" href="assets/css/animate.min.css?_v=20220221171553"> -->
+   <link rel="stylesheet" href="css/style.min.css?_v=20220221171553">
+</head>
+<body>
+   <header class="header-top">
+   <div class="my-container">
+      <p class="header-top__name">BookMe</p>
+      <button class="button-reset header-top__sign-up">Зарегистрироваться</button>
+   </div>
+</header>
+   <main>
+      <section class="customer-done">
+   <div class="my-container">
+      <div class="customer-done__info">
+         <h1 class="customer-done__title">Ваше расписание успешно создано!</h1>
+         <p class="customer-done__descr">На почту отправлена вся необходимая информация</p>
+      </div>
+      
+      <div class="calendar customer-done__calendar" data-calendar="main">
+         <div class="calendar__month">
+            <button class="button-reset calendar__arrow">
+               <svg><use xlink:href="img/icons/icons.svg#calendar-arrow"></use></svg>
+            </button>
+            <p><span class="calendar__month-name"></span> <span class="calendar__year"></span></p>
+            <button class="button-reset calendar__arrow">
+               <svg><use xlink:href="img/icons/icons.svg#calendar-arrow"></use></svg>
+            </button>
+         </div>
+         <div class="calendar__weekdays">
+            <div>Пн</div>
+            <div>Вт</div>
+            <div>Ср</div>
+            <div>Чт</div>
+            <div>Пт</div>
+            <div>Сб</div>
+            <div>Вс</div>
+         </div>
+         <div class="calendar__days"></div>
+      </div>
+   </div>
+</section>
+   </main>
+   <script src="js/script.min.js?_v=20220221171553"></script>
+</body>
+</html>

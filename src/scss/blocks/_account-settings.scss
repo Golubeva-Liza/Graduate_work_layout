@@ -92,6 +92,11 @@
       bottom: 60px;
       left: 0;
       margin: 0 40px;
+      display: flex;
+      align-items: center;
+      &:hover{
+         color: #FFFFFF;
+      }
    }
    
    &__add-photo{

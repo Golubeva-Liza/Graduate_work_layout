@@ -1,0 +1,65 @@
+.log-reg-forms{
+   &__container{
+      background: #FFFFFF;
+      border: 1px solid $main-grey;
+      box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.12);
+      width: 600px;
+      margin: 0 auto;
+      margin-top: 48px;
+   }
+   .form{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 48px;
+      form{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+      }
+      &__title{
+         font-weight: 600;
+         font-size: 25px;
+         line-height: 30px;
+         color: $main-color;
+         margin-bottom: 38px;
+      }
+      &__label{
+         display: block;
+         width: 305px;
+         margin-bottom: 24px;
+         span{
+            display: block;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            color: $main-color;
+            margin-bottom: 6px;
+            
+         }
+      }
+      &__btn{
+         padding: 0 20px;
+         margin: 0 auto;
+         margin-bottom: 24px;
+         a{
+            color: #FFFFFF;
+         }
+      }
+      &__bottom{
+         margin: 0;
+         a{
+            color: $main-blue;
+            &:hover{
+               color: $blue-hover;
+            }
+         }
+      }
+   }
+}
+.login-form{
+
+}
+.registration-form{
+
+}

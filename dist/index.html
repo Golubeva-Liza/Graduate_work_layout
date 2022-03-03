@@ -5,9 +5,9 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="icon" href="/favicon.ico">
-   <title>Главная</title>
-   <!-- <link rel="stylesheet" href="assets/css/animate.min.css?_v=20220214214743"> -->
-   <link rel="stylesheet" href="css/style.min.css?_v=20220214214743">
+   <title>BookMe: респонденты</title>
+   <!-- <link rel="stylesheet" href="assets/css/animate.min.css?_v=20220221171553"> -->
+   <link rel="stylesheet" href="css/style.min.css?_v=20220221171553">
 </head>
 <body>
    <div class="wrapper">
@@ -63,8 +63,36 @@
    </label>
    <label class="label settings-aside__label">
       <span>Возраст:</span>
-      <div class="select settings-aside__select">
-         прикол
+      <div class="range-slider">
+         <div class="range-slider__values">
+            <div class="range-slider__value">
+               <span>15</span>
+            </div>
+            <div class="range-slider__value">
+               <span>60</span>
+            </div>
+         </div>
+
+         <div class="range-slider__line">
+            <div class="range-slider__progress"></div>
+         </div>
+         
+         <div class="range-slider__inputs">
+            <input class="range-slider__min" type="range" min="0" max="100" value="15">
+            <input class="range-slider__max" type="range" min="0" max="100" value="60">
+         </div>
+
+         <!-- <div class="range-slider__fields">
+            <div class="range-slider__field">
+               <span>от</span>
+               <input class="input" type="number" value="15">
+            </div>
+            <div class="range-slider__field">
+               <span>до</span>
+               <input class="input" type="number" value="60">
+            </div>
+         </div> -->
+         
       </div>
    </label>
    <label class="label settings-aside__label">
@@ -264,12 +292,12 @@
             <div class="modal__label">
                <span class="modal__input-name">Пол</span>
                <div class="modal__some-inputs">
-                  <label class="checkbox modal__sex">
+                  <label class="checkbox modal__checkbox">
                      <span>Мужской</span>
                      <input class="visually-hidden checkbox__input" checked type="radio" name="sex" value="male">
                      <div class="checkbox__check"></div>
                   </label>
-                  <label class="checkbox modal__sex">
+                  <label class="checkbox modal__checkbox">
                      <span>Женский</span>
                      <input class="visually-hidden checkbox__input" type="radio" name="sex" value="female">
                      <div class="checkbox__check"></div>
@@ -278,7 +306,7 @@
             </div>
             <label class="modal__label">
                <span class="modal__input-name">Дата рождения / возраст</span>
-               <div class="modal__some-inputs modal__date">
+               <div class="modal__some-inputs modal_respond__date">
                   <input class="input modal__input" type="date" name="birthday-date" placeholder="Дата">
                   <input class="input modal__input" type="number" name="age" placeholder="0">
                </div>
@@ -297,15 +325,15 @@
             </label>
             <label class="modal__label">
                <span class="modal__input-name">Добавить тэги</span>
-               <div class="modal__some-inputs modal__tags-input">
+               <div class="modal__some-inputs modal_respond__tags-input">
                   <input class="input modal__input" type="text" name="name" autocomplete="off" placeholder="Название тэга">
-                  <button class="button-reset button modal__tag-btn" disabled type="button">
+                  <button class="button-reset button modal_respond__tag-btn" disabled type="button">
                      <svg><use xlink:href="img/icons/icons.svg#add"></use></svg>
                   </button>
                </div>
             </label>
 
-            <div class="modal__btns">
+            <div class="modal__bottom-btns">
                <button class="button-reset button modal__btn modal__close" type="button" data-modal-close>Отмена</button>
                <button class="button-reset button modal__btn modal__ready" type="submit">Готово</button>
             </div>
@@ -334,12 +362,12 @@
             <div class="modal__label">
                <span class="modal__input-name">Пол</span>
                <div class="modal__some-inputs">
-                  <label class="checkbox modal__sex">
+                  <label class="checkbox modal__checkbox">
                      <span>Мужской</span>
                      <input class="visually-hidden checkbox__input" checked type="radio" name="sex" value="male">
                      <div class="checkbox__check"></div>
                   </label>
-                  <label class="checkbox modal__sex">
+                  <label class="checkbox modal__checkbox">
                      <span>Женский</span>
                      <input class="visually-hidden checkbox__input" type="radio" name="sex" value="female">
                      <div class="checkbox__check"></div>
@@ -348,7 +376,7 @@
             </div>
             <label class="modal__label">
                <span class="modal__input-name">Дата рождения / возраст</span>
-               <div class="modal__some-inputs modal__date">
+               <div class="modal__some-inputs modal_respond__date">
                   <input class="input modal__input" type="date" name="birthday-date" placeholder="Дата">
                   <input class="input modal__input" type="number" name="age" placeholder="0">
                </div>
@@ -367,15 +395,15 @@
             </label>
             <label class="modal__label">
                <span class="modal__input-name">Добавить тэги</span>
-               <div class="modal__some-inputs modal__tags-input">
+               <div class="modal__some-inputs modal_respond__tags-input">
                   <input class="input modal__input" type="text" name="name" autocomplete="off" placeholder="Название тэга">
-                  <button class="button-reset button modal__tag-btn" disabled type="button">
+                  <button class="button-reset button modal_respond__tag-btn" disabled type="button">
                      <svg><use xlink:href="img/icons/icons.svg#add"></use></svg>
                   </button>
                </div>
             </label>
 
-            <div class="modal__btns">
+            <div class="modal__bottom-btns">
                <button class="button-reset button modal__btn modal__close" type="button" data-modal-close>Отмена</button>
                <button class="button-reset button modal__btn modal__ready" type="submit">Готово</button>
             </div>
@@ -398,6 +426,6 @@
       </div>
    </div>
 </div>
-   <script src="js/script.min.js?_v=20220214214743"></script>
+   <script src="js/script.min.js?_v=20220221171553"></script>
 </body>
 </html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="icon" href="/favicon.ico">
+   <title>BookMe</title>
+   <!-- <link rel="stylesheet" href="assets/css/animate.min.css?_v=20220221171553"> -->
+   <link rel="stylesheet" href="css/style.min.css?_v=20220221171553">
+</head>
+<body>
+   <header class="header-top">
+   <div class="my-container">
+      <p class="header-top__name">BookMe</p>
+      <button class="button-reset header-top__sign-up">Зарегистрироваться</button>
+   </div>
+</header>
+   <main class="respondent-main">
+      <div class="my-container">
+         <section class="respondent-about">
+   <h2 class="respondent-about__title">Проект 1</h2>
+   <p class="respondent-about__descr">
+      Добрый день.
+      <br><br>
+      На тестирование приглашаются респонденты, у которых есть своя машина и которые не менее 5 раз уже обслуживались в автомастерской или проходили ТО.
+      <br><br>
+      Будем рады каждому отклику!
+      <br><br>
+      Вознаграждения: нет
+   </p>
+   <div class="respondent-about__info">
+      Модератор: <span>Мария</span> 
+   </div>
+   <div class="respondent-about__info">
+      Адрес: <span>Биржевая линия, 14, лит.А, Санкт-Петербург, ауд. 436</span> 
+   </div>
+</section>
+         <section class="respondent-calendar">
+   <h2 class="respondent-calendar__title">Выберите дату</h2>
+   <div class="calendar respondent-calendar__calendar" data-calendar="main">
+      <div class="calendar__month">
+         <button class="button-reset calendar__arrow">
+            <svg><use xlink:href="img/icons/icons.svg#calendar-arrow"></use></svg>
+         </button>
+         <p><span class="calendar__month-name"></span> <span class="calendar__year"></span></p>
+         <button class="button-reset calendar__arrow">
+            <svg><use xlink:href="img/icons/icons.svg#calendar-arrow"></use></svg>
+         </button>
+      </div>
+      <div class="calendar__weekdays">
+         <div>Пн</div>
+         <div>Вт</div>
+         <div>Ср</div>
+         <div>Чт</div>
+         <div>Пт</div>
+         <div>Сб</div>
+         <div>Вс</div>
+      </div>
+      <div class="calendar__days"></div>
+   </div>
+   <div class="respondent-calendar__hints">
+      <div class="respondent-calendar__hint">
+         <span>запись недоступна</span>
+      </div>
+      <div class="respondent-calendar__hint">
+         <span>запись доступна</span>
+      </div>
+      <div class="respondent-calendar__hint">
+         <span>на этот день уже есть записи</span>
+      </div>
+   </div>
+</section>
+         <section class="respondent-settings">
+   <form action="#">
+      <h2 class="respondent-settings__title">Выберите время</h2>
+      <p class="respondent-settings__date">25 декабря</p>
+      <div class="respondent-settings__select" id="select-time"></div>
+
+      <h2 class="respondent-settings__title">Личные данные</h2>
+      <label class="respondent-settings__label">
+         <span>Имя *</span>
+         <input class="input" type="text" name="name" placeholder="Петрова Яна Олеговна">
+      </label>
+      <label class="respondent-settings__label">
+         <span>Почта *</span>
+         <input class="input" type="email" name="email" placeholder="petrovaao@gmail.com">
+      </label>
+      <label class="respondent-settings__label">
+         <span>Телефон *</span>
+         <input class="input" type="tel" name="phone" placeholder="Ваш телефон">
+      </label>
+      
+      <div class="respondent-settings__call">
+         <label class="checkbox respondent-settings__checkbox">
+            <input class="visually-hidden checkbox__input" name="all" type="checkbox">
+            <div class="checkbox__check"></div>
+            <span>Позвоните мне перед тестированием за</span>
+         </label>
+         <div class="respondent-settings__time input-btns">
+            <label>
+               <input type="radio" class="visually-hidden" name="duration">
+               <div class="button button_linear">1 час</div>
+            </label>
+            <label>
+               <input type="radio" class="visually-hidden" name="duration">
+               <div class="button button_linear">2 часа</div>
+            </label>
+            <label>
+               <input type="radio" class="visually-hidden" name="duration">
+               <div class="button button_linear">1 день</div>
+            </label>
+            <label>
+               <input type="radio" class="visually-hidden" name="duration">
+               <div class="button button_linear">Другое</div>
+            </label>
+         </div>
+      </div>
+
+      <label class="respondent-settings__label">
+         <span>Комментарий</span>
+         <textarea class="input input_textarea" name="comment" autocomplete="off" placeholder="Пожелания или что-то ещё"></textarea>
+      </label>
+
+      <div class="respondent-settings__agreement">Отправляя настоящую форму я даю <a href="#">согласие на обработку персональных данных</a></div>
+
+      <div class="respondent-settings__btns">
+         <button class="button-reset button button_linear" type="button">Заполнить анкету</button>
+         <button class="button-reset button" type="submit">Отправить</button>
+      </div>
+   </form>
+</section>
+      </div>
+   </main>
+
+   <!-- модальные окна -->
+   <script src="js/script.min.js?_v=20220221171553"></script>
+</body>
+</html>

@@ -5,9 +5,9 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="icon" href="/favicon.ico">
-   <title>Главная</title>
-   <!-- <link rel="stylesheet" href="assets/css/animate.min.css?_v=20220214214743"> -->
-   <link rel="stylesheet" href="css/style.min.css?_v=20220214214743">
+   <title>BookMe: проекты</title>
+   <!-- <link rel="stylesheet" href="assets/css/animate.min.css?_v=20220221171553"> -->
+   <link rel="stylesheet" href="css/style.min.css?_v=20220221171553">
 </head>
 <body>
    <div class="wrapper">
@@ -285,7 +285,7 @@
                <span class="modal__input-name">Комментарий</span>
                <textarea class="input modal__textarea" name="comment" placeholder="Ваш комментарий"></textarea>
             </label>
-            <div class="modal__btns">
+            <div class="modal__bottom-btns">
                <button class="button-reset button modal__btn modal__close" type="button" data-modal-close>Отмена</button>
                <button class="button-reset button modal__btn modal__ready" type="submit" disabled>Готово</button>
             </div>
@@ -295,73 +295,202 @@
 </div>
    <div class="modal modal-new-project" data-modal-target="new-project">
    <div class="modal__body">
-      <div class="modal__content">
-         <h3 class="modal__title">Добавить респондента</h3>
-         <form class="modal__form" action="/" method="POST">
+      <form class="modal__form" action="/" method="POST">
+         <div class="modal__content modal-new-project__content_first">
+            <div class="modal__back">
+               <button class="button-reset modal__back-button" type="button" data-modal-close>
+                  <svg>
+                     <use xlink:href="img/icons/icons.svg#calendar-arrow-small"></use>
+                  </svg>
+               </button>
+               <h3 class="modal__title">Создание проекта</h3>
+            </div>
+
             <label class="modal__label">
-               <span class="modal__input-name">ФИО</span>
+               <span class="modal__input-name">Название проекта</span>
                <input class="input modal__input" type="text" name="name" autocomplete="off" placeholder="Введите ФИО">
             </label>
             <label class="modal__label">
-               <span class="modal__input-name">Почта</span>
-               <input class="input modal__input" type="email" name="email" autocomplete="off" placeholder="Введите почту">
-            </label>
-            <label class="modal__label">
-               <span class="modal__input-name">Телефон</span>
-               <input class="input modal__input" type="tel" name="phone" autocomplete="off" placeholder="Введите номер телефона">
+               <span class="modal__input-name">Описание</span>
+               <textarea class="input modal__textarea" type="text" name="project-descr" autocomplete="off"
+                  placeholder="Добавьте описание проекта"></textarea>
             </label>
             <div class="modal__label">
-               <span class="modal__input-name">Пол</span>
-               <div class="modal__some-inputs">
-                  <label class="checkbox modal__sex">
-                     <span>Мужской</span>
-                     <input class="visually-hidden checkbox__input" checked type="radio" name="sex" value="male">
-                     <div class="checkbox__check"></div>
-                  </label>
-                  <label class="checkbox modal__sex">
-                     <span>Женский</span>
-                     <input class="visually-hidden checkbox__input" type="radio" name="sex" value="female">
-                     <div class="checkbox__check"></div>
-                  </label>
+               <span class="modal__input-name">Адрес проведения тестирований</span>
+               <div class="modal__some-inputs modal-new-project__address">
+                  <input class="input modal__input" type="text" name="project-address" autocomplete="off"
+                     placeholder="Добавьте адрес">
+                  <button class="button-reset button button_linear" type="button">Выбрать сохраненный</button>
                </div>
             </div>
             <label class="modal__label">
-               <span class="modal__input-name">Дата рождения / возраст</span>
-               <div class="modal__some-inputs modal__date">
-                  <input class="input modal__input" type="date" name="birthday-date" placeholder="Дата">
-                  <input class="input modal__input" type="number" name="age" placeholder="0">
+               <span class="modal__input-name">Ссылка на анкету для респондентов</span>
+               <input class="input modal__input" type="text" name="project-survey-link" autocomplete="off"
+                  placeholder="Ссылка на Google Form">
+            </label>
+            <label class="modal__label">
+               <span class="modal__input-name">Ссылка для приглашения</span>
+               <div class="modal__some-inputs modal-new-project__link">
+                  <span class="modal__input-name">bookme.ru/maria/</span>
+                  <input class="input modal__input" type="text" name="project-link" autocomplete="off"
+                     placeholder="project name">
                </div>
             </label>
-            <label class="modal__label">
-               <span class="modal__input-name">Образование</span>
-               <div id="select-modal-education-2"></div>
-            </label>
-            <label class="modal__label">
-               <span class="modal__input-name">Место жительства</span>
-               <input class="input modal__input" type="text" name="name" autocomplete="off" placeholder="Город">
-            </label>
-            <label class="modal__label">
-               <span class="modal__input-name">Семейное положение</span>
-               <div id="select-modal-fs-2"></div>
-            </label>
-            <label class="modal__label">
-               <span class="modal__input-name">Добавить тэги</span>
-               <div class="modal__some-inputs modal__tags-input">
-                  <input class="input modal__input" type="text" name="name" autocomplete="off" placeholder="Название тэга">
-                  <button class="button-reset button modal__tag-btn" disabled type="button">
-                     <svg><use xlink:href="img/icons/icons.svg#add"></use></svg>
+            <div class="modal__label">
+               <div class="modal__question">
+                  <span class="modal__input-name">Длительность тестирования</span>
+                  <button class="button-reset modal__question-btn" type="button">
+                     <svg>
+                        <use xlink:href="img/icons/icons.svg#info"></use>
+                     </svg>
                   </button>
                </div>
-            </label>
+               <div class="modal__some-inputs input-btns">
+                  <label>
+                     <input type="radio" class="visually-hidden" name="duration">
+                     <div class="button button_linear">30 минут</div>
+                  </label>
+                  <label>
+                     <input type="radio" class="visually-hidden" name="duration">
+                     <div class="button button_linear">45 минут</div>
+                  </label>
+                  <label>
+                     <input type="radio" class="visually-hidden" name="duration">
+                     <div class="button button_linear">60 минут</div>
+                  </label>
+                  <label>
+                     <input type="radio" class="visually-hidden" name="duration">
+                     <div class="button button_linear">90 минут</div>
+                  </label>
+                  <label>
+                     <input type="radio" class="visually-hidden" name="duration">
+                     <div class="button button_linear">Другое</div>
+                  </label>
+               </div>
+            </div>
+            <div class="modal__label modal__period">
+               <span class="modal__input-name">Период тестирования</span>
+               <div>
+                  С 
+                  <button class="button-reset" type="button">12.12.19</button>
+                  по 
+                  <button class="button-reset" type="button">выбрать дату</button>
+               </div>
+            </div>
 
-            <div class="modal__btns">
-               <button class="button-reset button modal__btn modal__close" type="button" data-modal-close>Отмена</button>
+            <div class="modal__btns modal__steps">
+               <div class="progress modal__progress">
+                  <div class="progress modal__progress">
+                     <div class="progress__line">
+                        <div class="progress__line-active"></div>
+                     </div>
+                     <div class="progress__step progress__step_active"></div>
+                     <div class="progress__step"></div>
+                  </div>
+               </div>
+               <button class="button-reset button modal__btn modal__ready" type="button" data-modal-next>Выбор дат и времени</button>
+            </div>
+         </div>
+         <div class="modal__content modal-new-project__content_second">
+            <div class="modal-new-project__top">
+               <div class="modal__back">
+                  <button class="button-reset modal__back-button" type="button" data-modal-prev>
+                     <svg><use xlink:href="img/icons/icons.svg#calendar-arrow-small"></use></svg>
+                  </button>
+                  <h3 class="modal__title">Создание проекта</h3>
+               </div>
+               <button class="button-reset button button_linear" type="button" data-popup-btn="copy-schedule">Скопировать время из</button>
+               <div class="popup modal-new-project__copy-schedule" data-popup-target="copy-schedule">
+                  <ul class="popup__list">
+                     <li class="popup__item">
+                        <button class="button-reset">Кампания Google март 2018</button>
+                     </li>
+                     <li class="popup__item">
+                        <button class="button-reset">Расписание на зиму 2018</button>
+                     </li>
+                     <hr class="popup__line">
+                     <li class="popup__item">
+                        <button class="button-reset">Excel</button>
+                     </li>
+                     <li class="popup__item">
+                        <button class="button-reset" data-popup-btn="google-import" type="button">Google Calendar</button>
+                        <div class="popup modal-new-project__google-import" data-popup-target="google-import">
+                           <ul class="popup__list">
+                              <li class="popup__item">
+                                 <button class="button-reset">Установить как занятые дни</button>
+                              </li>
+                              <li class="popup__item">
+                                 <button class="button-reset">Установить как свободные дни</button>
+                              </li>
+                              </li>
+                           </ul>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+
+            <div class="calendar modal-new-project__calendar">
+               <div class="calendar__month">
+                  <button class="button-reset calendar__arrow">
+                     <svg><use xlink:href="img/icons/icons.svg#calendar-arrow"></use></svg>
+                  </button>
+                  <p><span class="calendar__month-name"></span> <span class="calendar__year"></span></p>
+                  <button class="button-reset calendar__arrow">
+                     <svg><use xlink:href="img/icons/icons.svg#calendar-arrow"></use></svg>
+                  </button>
+               </div>
+               <div class="calendar__weekdays">
+                  <div>Пн</div>
+                  <div>Вт</div>
+                  <div>Ср</div>
+                  <div>Чт</div>
+                  <div>Пт</div>
+                  <div>Сб</div>
+                  <div>Вс</div>
+               </div>
+               <div class="calendar__days"></div>
+            </div>
+
+            <div class="modal__btns modal__steps">
+               <div class="progress modal__progress">
+                  <div class="progress__line">
+                     <div class="progress__line-active"></div>
+                  </div>
+                  <div class="progress__step progress__step_done"></div>
+                  <div class="progress__step progress__step_active"></div>
+               </div>
+               <button class="button-reset button modal__btn modal__ready" type="button" data-modal-next>Готово</button>
+            </div>
+         </div>
+         <div class="modal__content modal-new-project__content_third">
+            <div class="modal__back">
+               <button class="button-reset modal__back-button" type="button" data-modal-prev>
+                  <svg>
+                     <use xlink:href="img/icons/icons.svg#calendar-arrow-small"></use>
+                  </svg>
+               </button>
+               <h3 class="modal__title">Создание проекта</h3>
+            </div>
+            <span class="modal__input-name modal-new-project__project-name">Проект <span>Расписание1</span> успешно создан!</span>
+            <a href="#" class="modal-new-project__project-link">https://book.me/maria/raspisanie1</a>
+
+            <div class="modal__btns modal__steps">
+               <div class="progress modal__progress">
+                  <div class="progress modal__progress">
+                     <div class="progress__line">
+                        <div class="progress__line-active"></div>
+                     </div>
+                     <div class="progress__step progress__step_done"></div>
+                     <div class="progress__step progress__step_done"></div>
+                  </div>
+               </div>
                <button class="button-reset button modal__btn modal__ready" type="submit">Готово</button>
             </div>
-         </form>
-      </div>
+         </div>
+      </form>
    </div>
 </div>
-   <script src="js/script.min.js?_v=20220214214743"></script>
+   <script src="js/script.min.js?_v=20220221171553"></script>
 </body>
 </html>

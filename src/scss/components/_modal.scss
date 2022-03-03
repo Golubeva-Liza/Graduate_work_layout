@@ -16,7 +16,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 30px 20px;
+      padding: 20px 20px;
    }
    &__content{
       width: 460px;
@@ -24,6 +24,11 @@
       box-shadow: 0px 10px 23px rgba(0, 0, 0, 0.12);
       border-radius: 5px;
       padding: 26px;
+   }
+   &__content:nth-last-child(-n+2) {
+      .progress__line-active{
+         width: 100%;
+      }
    }
    &__title{
       font-weight: 600;
@@ -41,37 +46,28 @@
    }
    &__label{
       display: block;
-      margin-bottom: 20px;
+      margin-bottom: 22px;
    }
    &__some-inputs{
       display: flex;
    }
-
-
-   &__date{
-      input:first-child{
-         margin-right: 16px;
-         width: 150px;
-      }
-      input:last-child{
-         width: 47px;
+   &__value{
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 16px;
+      color: $main-color;
+   }
+   &__link{
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 16px;
+      color: black;
+      transition: color .3s;
+      &:hover{
+         color: $main-blue;
       }
    }
-   &__tags-input{
-      input{
-         margin-right: 16px;
-      }
-   }
-   &__tag-btn{
-      background-color: $main-blue;
-      border-radius: 5px;
-      padding: 0 10px;
-      svg{
-         width: 16px;
-         height: 16px;
-      }
-   }
-   &__sex{
+   &__checkbox{
       display: flex;
       cursor: pointer;
       span{
@@ -84,7 +80,7 @@
          margin-right: 24px;
       }
    }
-   &__btns{
+   &__bottom-btns{
       display: flex;
       justify-content: flex-end;
    }
@@ -108,6 +104,74 @@
       resize: none;
       padding: 10px 14px;
       height: 115px;
+   }
+   &__back{
+      display: flex;
+      align-items: center;
+      margin-bottom: 32px;
+      .modal__title{
+         margin-bottom: 0;
+      }
+   }
+   &__back-button{
+      padding: 0 15px;
+      border-radius: 5px;
+      height: 36px;
+      background-color: rgba($color: $main-color, $alpha: 0.1);
+      color: rgba($color: red, $alpha: 0.5);
+      transition: all .3s;
+      margin-right: 24px;
+      svg{
+         height: 13px;
+         width: 8px;
+         opacity: 0.5;
+         pointer-events: none;
+      }
+      &:hover{
+         background-color: rgba($color: $main-color, $alpha: 0.2);
+      }
+   }
+   &__question{
+      display: flex;
+      margin-bottom: 6px;
+      align-items: center;
+      span{
+         margin-bottom: 0;
+         margin-right: 6px;
+      }
+   }
+   &__question-btn{
+      width: 20px;
+      height: 20px;
+      color: $main-blue;
+      svg{
+         width: 100%;
+         height: 100%;
+         pointer-events: none;
+         fill: currentColor;
+      }
+      &:hover{
+         color: $blue-hover;
+      }
+   }
+   &__period{
+      margin-bottom: 32px;
+      div, button{
+         font-weight: 500;
+         font-size: 13px;
+         line-height: 16px;
+      }
+      button{
+         color: $main-blue;
+         &:hover{
+            color: $blue-hover;
+         }
+      }
+   }
+   &__steps{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
    }
 }
 

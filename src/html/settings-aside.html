@@ -17,8 +17,36 @@
    </label>
    <label class="label settings-aside__label">
       <span>Возраст:</span>
-      <div class="select settings-aside__select">
-         прикол
+      <div class="range-slider">
+         <div class="range-slider__values">
+            <div class="range-slider__value">
+               <span>15</span>
+            </div>
+            <div class="range-slider__value">
+               <span>60</span>
+            </div>
+         </div>
+
+         <div class="range-slider__line">
+            <div class="range-slider__progress"></div>
+         </div>
+         
+         <div class="range-slider__inputs">
+            <input class="range-slider__min" type="range" min="0" max="100" value="15">
+            <input class="range-slider__max" type="range" min="0" max="100" value="60">
+         </div>
+
+         <!-- <div class="range-slider__fields">
+            <div class="range-slider__field">
+               <span>от</span>
+               <input class="input" type="number" value="15">
+            </div>
+            <div class="range-slider__field">
+               <span>до</span>
+               <input class="input" type="number" value="60">
+            </div>
+         </div> -->
+         
       </div>
    </label>
    <label class="label settings-aside__label">

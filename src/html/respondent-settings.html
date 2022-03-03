@@ -1,0 +1,59 @@
+<section class="respondent-settings">
+   <form action="#">
+      <h2 class="respondent-settings__title">Выберите время</h2>
+      <p class="respondent-settings__date">25 декабря</p>
+      <div class="respondent-settings__select" id="select-time"></div>
+
+      <h2 class="respondent-settings__title">Личные данные</h2>
+      <label class="respondent-settings__label">
+         <span>Имя *</span>
+         <input class="input" type="text" name="name" placeholder="Петрова Яна Олеговна">
+      </label>
+      <label class="respondent-settings__label">
+         <span>Почта *</span>
+         <input class="input" type="email" name="email" placeholder="petrovaao@gmail.com">
+      </label>
+      <label class="respondent-settings__label">
+         <span>Телефон *</span>
+         <input class="input" type="tel" name="phone" placeholder="Ваш телефон">
+      </label>
+      
+      <div class="respondent-settings__call">
+         <label class="checkbox respondent-settings__checkbox">
+            <input class="visually-hidden checkbox__input" name="all" type="checkbox">
+            <div class="checkbox__check"></div>
+            <span>Позвоните мне перед тестированием за</span>
+         </label>
+         <div class="respondent-settings__time input-btns">
+            <label>
+               <input type="radio" class="visually-hidden" name="duration">
+               <div class="button button_linear">1 час</div>
+            </label>
+            <label>
+               <input type="radio" class="visually-hidden" name="duration">
+               <div class="button button_linear">2 часа</div>
+            </label>
+            <label>
+               <input type="radio" class="visually-hidden" name="duration">
+               <div class="button button_linear">1 день</div>
+            </label>
+            <label>
+               <input type="radio" class="visually-hidden" name="duration">
+               <div class="button button_linear">Другое</div>
+            </label>
+         </div>
+      </div>
+
+      <label class="respondent-settings__label">
+         <span>Комментарий</span>
+         <textarea class="input input_textarea" name="comment" autocomplete="off" placeholder="Пожелания или что-то ещё"></textarea>
+      </label>
+
+      <div class="respondent-settings__agreement">Отправляя настоящую форму я даю <a href="#">согласие на обработку персональных данных</a></div>
+
+      <div class="respondent-settings__btns">
+         <button class="button-reset button button_linear" type="button">Заполнить анкету</button>
+         <button class="button-reset button" type="submit">Отправить</button>
+      </div>
+   </form>
+</section>
